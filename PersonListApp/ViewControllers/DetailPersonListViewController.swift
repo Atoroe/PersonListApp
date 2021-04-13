@@ -36,8 +36,10 @@ class DetailPersonListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         if indexPath.row == 0 {
             content.text = String(persons[indexPath.row].phoneNumber)
+            content.image = UIImage(systemName: "phone")
         } else {
             content.text = persons[indexPath.row].email
+            content.image = UIImage(systemName: "mail")
         }
         cell.contentConfiguration = content
         return cell
