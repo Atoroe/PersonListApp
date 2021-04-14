@@ -20,8 +20,8 @@ class AboutPersonlViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.title = person.fullName
         
-        phoneNumberLabel.text = String(person.phoneNumber)
-        emailLabel.text = person.email
+        phoneNumberLabel.text = "Phone number: \(String(person.phoneNumber))"
+        emailLabel.text = "Email: \(person.email)"
 
     }
     
