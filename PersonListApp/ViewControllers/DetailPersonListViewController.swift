@@ -9,12 +9,10 @@ import UIKit
 
 class DetailPersonListViewController: UITableViewController {
     
-    private var persons = [Person]()
+    var persons: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        persons = DataManager.shared.getListOfPersons()
     }
     
     // MARK: - Table view data source

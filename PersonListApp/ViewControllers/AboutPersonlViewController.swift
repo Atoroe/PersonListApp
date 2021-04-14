@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class AboutPersonlViewController: UIViewController {
 
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
@@ -17,7 +17,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.title = person.fullName
+        
         phoneNumberLabel.text = String(person.phoneNumber)
         emailLabel.text = person.email
 

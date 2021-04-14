@@ -14,9 +14,10 @@
 		E3BDD5D82625D86F006F7478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3BDD5D62625D86F006F7478 /* LaunchScreen.storyboard */; };
 		E3BDD5E82625DB8A006F7478 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5E72625DB8A006F7478 /* PersonListViewController.swift */; };
 		E3BDD5EB2625DBC0006F7478 /* DetailPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5EA2625DBC0006F7478 /* DetailPersonListViewController.swift */; };
-		E3BDD5F22625DDCA006F7478 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5F12625DDCA006F7478 /* DetailViewController.swift */; };
+		E3BDD5F22625DDCA006F7478 /* AboutPersonlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5F12625DDCA006F7478 /* AboutPersonlViewController.swift */; };
 		E3BDD5F52625E147006F7478 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5F42625E147006F7478 /* Person.swift */; };
 		E3BDD5F82625E216006F7478 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5F72625E216006F7478 /* DataManager.swift */; };
+		E3BDD5FB26263473006F7478 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDD5FA26263472006F7478 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +30,10 @@
 		E3BDD5D92625D86F006F7478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3BDD5E72625DB8A006F7478 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		E3BDD5EA2625DBC0006F7478 /* DetailPersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonListViewController.swift; sourceTree = "<group>"; };
-		E3BDD5F12625DDCA006F7478 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E3BDD5F12625DDCA006F7478 /* AboutPersonlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPersonlViewController.swift; sourceTree = "<group>"; };
 		E3BDD5F42625E147006F7478 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E3BDD5F72625E216006F7478 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		E3BDD5FA26263472006F7478 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +89,10 @@
 		E3BDD5E12625D8B2006F7478 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3BDD5FA26263472006F7478 /* MainTabBarController.swift */,
 				E3BDD5E72625DB8A006F7478 /* PersonListViewController.swift */,
 				E3BDD5EA2625DBC0006F7478 /* DetailPersonListViewController.swift */,
-				E3BDD5F12625DDCA006F7478 /* DetailViewController.swift */,
+				E3BDD5F12625DDCA006F7478 /* AboutPersonlViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,11 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3BDD5FB26263473006F7478 /* MainTabBarController.swift in Sources */,
 				E3BDD5F52625E147006F7478 /* Person.swift in Sources */,
 				E3BDD5EB2625DBC0006F7478 /* DetailPersonListViewController.swift in Sources */,
 				E3BDD5E82625DB8A006F7478 /* PersonListViewController.swift in Sources */,
 				E3BDD5F82625E216006F7478 /* DataManager.swift in Sources */,
-				E3BDD5F22625DDCA006F7478 /* DetailViewController.swift in Sources */,
+				E3BDD5F22625DDCA006F7478 /* AboutPersonlViewController.swift in Sources */,
 				E3BDD5CC2625D86C006F7478 /* AppDelegate.swift in Sources */,
 				E3BDD5CE2625D86C006F7478 /* SceneDelegate.swift in Sources */,
 			);
