@@ -11,7 +11,7 @@ class DataManager {
     static let shared = DataManager()
     private init() { }
     
-    private let firstNames = [
+    let firstNames = [
         "Liam",
         "Noah",
         "Oliver",
@@ -34,7 +34,7 @@ class DataManager {
         "Aiden"
     ]
     
-    private let lastNames = [
+    let lastNames = [
         "Smith",
         "Jones",
         "Williams",
@@ -57,7 +57,7 @@ class DataManager {
         "King"
     ]
     
-    private let phoneNumbers = [
+    let phoneNumbers = [
         6469767559,
         2216392745,
         7828671172,
@@ -80,7 +80,7 @@ class DataManager {
         4473121390
     ]
     
-    private let emails = [
+    let emails = [
         "mrdvt@mac.com",
         "afifi@msn.com",
         "duncand@yahoo.ca",
@@ -102,22 +102,4 @@ class DataManager {
         "sravani@mac.com",
         "quantaman@att.net"
     ]
-    
-    func getListOfPersons() -> [Person] {
-        var persons = [Person]()
-        var firstNames = self.firstNames
-        var lastNames = self.lastNames
-        var phoneNumbers = self.phoneNumbers
-        var emails = self.emails
-        
-        for _ in 0..<firstNames.count {
-            persons.append(Person(
-                            firstName: firstNames.remove(at: Int.random(in: 0..<firstNames.count)),
-                            lastName: lastNames.remove(at: Int.random(in: 0..<lastNames.count)),
-                            phoneNumber: phoneNumbers.remove(at: Int.random(in: 0..<phoneNumbers.count)),
-                            email: emails.remove(at: Int.random(in: 0..<emails.count))))
-            
-        }
-        return persons
-    }
 }

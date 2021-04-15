@@ -9,19 +9,16 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
-    private let persons = DataManager.shared.getListOfPersons()
+    private let persons = Person.getListOfPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "Persons List"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         
         setDataToVC()
     }
     
     private func setDataToVC() {
-        guard let viewControllers = self.viewControllers else { return }
+        guard let viewControllers = viewControllers else { return }
 
         for viewController in viewControllers {
             if let detailPersonListVC = viewController as? DetailPersonListViewController{
