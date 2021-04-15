@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ea3-xK-jmz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODl-4y-Dv6">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,20 +9,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="bR1-8p-QcU">
+        <scene sceneID="R1l-2Z-IeH">
             <objects>
-                <navigationController id="ea3-xK-jmz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="S3I-YH-Bml">
+                <navigationController id="ODl-4y-Dv6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="S4o-To-K7a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BLv-Zw-1CZ" kind="relationship" relationship="rootViewController" id="vfo-zy-zwc"/>
+                        <segue destination="BLv-Zw-1CZ" kind="relationship" relationship="rootViewController" id="TpG-hk-bFA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xpg-KN-srh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="McB-En-B0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-579" y="6"/>
+            <point key="canvasLocation" x="-519" y="6"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="rzb-gC-QaD">
@@ -46,11 +46,11 @@
         <!--Persons List-->
         <scene sceneID="1Ou-lj-GNl">
             <objects>
-                <tableViewController title="Persons List" id="iTE-hp-uTp" customClass="DetailPersonListViewController" customModule="PersonListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="iTE-hp-uTp" customClass="DetailPersonListViewController" customModule="PersonListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="trY-UX-CQi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="ope-j7-EZO" style="IBUITableViewCellStyleDefault" id="BWF-Bt-xBN">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
@@ -85,11 +85,11 @@
         <!--Persons List-->
         <scene sceneID="HQD-6U-mE2">
             <objects>
-                <tableViewController title="Persons List" id="1qC-Yc-W14" customClass="PersonListViewController" customModule="PersonListApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="1qC-Yc-W14" customClass="PersonListViewController" customModule="PersonListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lzq-sc-gcP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="w2n-Eq-FwC">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
@@ -109,7 +109,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person" catalog="system" id="lHZ-P5-7Ns"/>
-                    <navigationItem key="navigationItem" id="by2-Ud-jCi"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="lpo-ao-HiU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7w-Xd-ckq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,12 +165,6 @@
         <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

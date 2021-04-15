@@ -11,12 +11,6 @@ class DetailPersonListViewController: UITableViewController {
     
     var persons: [Person]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = "Persons List"
-    }
-    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
